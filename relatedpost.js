@@ -104,7 +104,7 @@ function printRelatedLabels(a) {
             } else {
                 comments[c] = ''
             };
-            dw += '<div class="related-post"><a href="' + urls[c] + '" rel="nofollow"><img border="0" class="thumbnail" alt="' + titles[c] + '" src="' + thumb[c] + '"/><div class="title">' + titles[c] + '</div></a></div>';
+            dw += '<li><a href="' + urls[c] + '" rel="nofollow"><img border="0" class="thumbnail" alt="' + titles[c] + '" src="' + thumb[c] + '"/><div class="title">' + titles[c] + '</div></a></li>';
             if (c < titles.length - 1) {
                 c++
             } else {
