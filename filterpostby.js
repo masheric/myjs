@@ -86,7 +86,7 @@ function showrecentpostswiththumbs(json) {
 
         var towrite = '';
         var flag = 0;
-        document.write('<span class="meta">');
+        document.write('<span class="date">');
 
         if (showpostdate == true) {
             towrite = towrite + monthnames[parseInt(cdmonth, 10)] + '-' + cdday + ' - ' + cdyear;
