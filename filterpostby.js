@@ -56,7 +56,7 @@ function showrecentpostswiththumbs(json) {
 
         if (showpostthumbnails == true)
             document.write('<img class="thumb" src="' + thumburl + '"/>');
-        document.write('<span class="title"><a href="' + posturl + '" target ="_top" rel="alternate">' + posttitle + '</a></span><i class="fa fa-plus">');
+        document.write('<span class="title"><a href="' + posturl + '" target ="_top" rel="alternate">' + posttitle + '</a></span><i class="fa fa-plus"></i>');
 
         if ("content" in entry) {
             var postcontent = entry.content.$t;
@@ -73,14 +73,14 @@ function showrecentpostswiththumbs(json) {
             if (postcontent.length < numchars) {
                 document.write('<span class="description">');
                 document.write(postcontent);
-                document.write('</span><i class="fa fa-plus">');
+                document.write('</span><i class="fa fa-plus"></i>');
             } else {
                 document.write('<span class="description">');
                 postcontent = postcontent.substring(0, numchars);
                 var quoteEnd = postcontent.lastIndexOf(" ");
                 postcontent = postcontent.substring(0, quoteEnd);
                 document.write(postcontent + '...');
-                document.write('</span><i class="fa fa-plus">');
+                document.write('</span><i class="fa fa-plus"></i>');
             }
         }
 
